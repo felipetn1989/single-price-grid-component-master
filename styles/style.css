@@ -42,6 +42,8 @@ body {
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+    transition: all .5s;
 }
 
 .card .join,
@@ -178,6 +180,7 @@ ul {
         width: 50%;
     }
 
+    .card .join,
     .card .sub,
     .card .why {
         padding: 30px;
