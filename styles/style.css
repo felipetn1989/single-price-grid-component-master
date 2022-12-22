@@ -44,7 +44,9 @@ body {
     overflow: hidden;
 }
 
-.card > div {
+.card .join,
+.card .sub,
+.card .why {
     padding: 20px 20px 10px 20px;
 }
 
@@ -150,4 +152,35 @@ ul {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:992px) {
+    .card {
+        width: 600px;
+    }
+
+    .join > h2 {
+        margin-bottom: 10px;
+    }
+
+    .join > p {
+        font-size: .92em;
+        font-weight: bold;
+        line-height: 1.5em;
+    }
+
+    .bloc2 {
+        display: flex;
+    }
+
+    .sub,
+    .why {
+        width: 50%;
+    }
+
+    .card .sub,
+    .card .why {
+        padding: 30px;
+    }
+    
 }
