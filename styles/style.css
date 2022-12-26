@@ -33,23 +33,30 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Karla', sans-serif;
 }
 
 .card {
     width: 300px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+    margin-bottom: 1.25rem;
     transition: all .5s;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+}
+
+.card .join {
+    border-radius: 10px 10px 0 0;
+}
+
+.card .why {
+    border-radius: 0 0 10px 10px;
 }
 
 .card .join,
 .card .sub,
 .card .why {
-    padding: 20px 20px 10px 20px;
+    padding: 1.25rem 1.25rem 0.625rem 1.25rem;
 }
 
 .join {
@@ -58,22 +65,22 @@ body {
 }
 
 .join > * {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .join h1 {
-    margin-top: 10px;
+    margin-top: 0.625em;
     color: var(--Cyan);
     font-size: 1.2em;
 }
 
 .join h2 {
     color: var(--Bright-Yellow);
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .join p {
-    font-size: .85em;
+    font-size: .8125rem;
     line-height: 2em;
 }
 
@@ -86,29 +93,29 @@ body {
 }
 
 .sub h1 {
-    font-size: 1.1em;
+    font-size: 1.0625rem;
     margin-bottom: 20px;
 }
 
 .sub p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .value {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 span.price {
-    margin-right: 10px;
-    font-size: 2em;
+    margin-right: 0.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 span.month {
     color: rgba(255, 255, 255, 0.685);
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .sign {
@@ -118,8 +125,8 @@ span.month {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
-    margin-top: 30px;
+    margin-bottom: 0.9375em;
+    margin-top: 1.875em;
     border-radius: 10px;
 }
 
@@ -135,15 +142,15 @@ span.month {
 }
 
 .why h1 {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+    font-size: 1.0625rem;
+    margin-bottom: 0.9375em;
 }
 
 ul {
     list-style-type: none;
-    font-size: .9em;
-    padding-bottom: 15px;
-    line-height: 1.4em;
+    font-size: .9375rem;
+    padding-bottom: .9375em;
+    line-height: 1.375em;
     color: rgba(255, 255, 255, 0.685);
 }
 
@@ -159,20 +166,29 @@ ul {
 @media screen and (min-width:992px) {
     .card {
         width: 600px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
     }
 
     .join > h2 {
-        margin-bottom: 10px;
+        margin-bottom: .625em;
     }
 
     .join > p {
-        font-size: .92em;
+        font-size: .9125em;
         font-weight: bold;
         line-height: 1.5em;
     }
 
     .bloc2 {
         display: flex;
+    }
+
+    .sub {
+        border-radius: 0 0 0 10px;
+    }
+
+    .card .why {
+        border-radius: 0 0 10px 0;
     }
 
     .sub,
@@ -183,7 +199,7 @@ ul {
     .card .join,
     .card .sub,
     .card .why {
-        padding: 30px;
+        padding: 1.875em;
     }
     
 }
