@@ -74,13 +74,10 @@ body {
     font-size: 1.2em;
 }
 
-.join h2 {
+p.condition {
     color: var(--Bright-Yellow);
     font-size: 1rem;
-}
-
-.join p {
-    font-size: .8125rem;
+    font-weight: bold;
     line-height: 2em;
 }
 
@@ -92,7 +89,7 @@ body {
     color: var(--Light-Gray);
 }
 
-.sub h1 {
+.sub h2 {
     font-size: 1.0625rem;
     margin-bottom: 20px;
 }
@@ -141,7 +138,7 @@ span.month {
     color: var(--Light-Gray);
 }
 
-.why h1 {
+.why h2 {
     font-size: 1.0625rem;
     margin-bottom: 0.9375em;
 }
@@ -173,7 +170,7 @@ ul {
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
     }
 
-    .join > h2 {
+    .join > .condition {
         margin-bottom: .625em;
     }
 
