@@ -164,6 +164,10 @@ ul {
 }
 
 @media screen and (min-width:992px) {
+    body {
+        justify-content: center;
+    }
+
     .card {
         width: 600px;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
