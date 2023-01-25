@@ -94,7 +94,7 @@ body {
   background-color: var(--Light-Gray);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1rem;
   font-family: "Karla", sans-serif;
